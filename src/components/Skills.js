@@ -5,10 +5,11 @@ import {SiJavascript} from 'react-icons/si'
 const Skills = () => {
   return (
     <div>
+
+      {/* hard skills section */}
       <h3 className='text-3xl text-center border-[#3794fc] border-b pt-5'>Tech skills</h3>
 
-   
-      <div id='skills' className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 place-items-center'>
+      <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 place-items-center'>
       
           <div className='text-6xl text-[#3794fc] flex flex-col p-10 place-items-center'>
           <FaHtml5 />
@@ -70,9 +71,9 @@ const Skills = () => {
           <h2 className='text-2xl'>VS Code</h2>
           </div>
         
-        
       </div>
     
+      {/* soft skills section */}
       <h3 className='text-3xl text-center border-[#3794fc] border-b pt-5'>Soft Skills</h3>
       <p className='text-xl text-center leading-10 p-5'>Good oral and written communication <span className='text-[#3794fc]'>|</span> Problem solving <span className='text-[#3794fc]'>|</span> Good Teamwork skills <span className='text-[#3794fc]'>|</span> Innovative <span className='text-[#3794fc]'>|</span> Good Imagination <span className='text-[#3794fc]'>|</span> Critical Thinking <span className='text-[#3794fc]'>|</span> Collaborates well with others in a professional manner <span className='text-[#3794fc]'>|</span> Dedicated and Committed <span className='text-[#3794fc]'>|</span> Excellent Time Management Skills <span className='text-[#3794fc]'>|</span> Good organization skills <span className='text-[#3794fc]'>|</span> Eager to Learn with a Passion for Tech </p>
     </div>

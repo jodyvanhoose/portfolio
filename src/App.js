@@ -3,6 +3,8 @@
 
 import About from "./components/About";
 import AboutImg from "./components/AboutImg";
+import ContactImg from "./components/ContactImg";
+import ContactSection from "./components/ContactSection";
 import GreenImg from "./components/GreenImg";
 import HeroImg from "./components/HeroImg";
 import Nav from "./components/Nav";
@@ -18,13 +20,13 @@ function App() {
     // navbar
     <div className="scroll-smooth text-gray-800">
       <Nav></Nav>
-      <div className="md:flex">
+      <div id="home" className="md:flex">
         <HeroImg />
         <Section />
       </div>
 
     {/* projects section */}
-      <h1 className="text-center text-6xl text-[#3794fc] pb-5 border-b-gray-300 border-solid border-b">Projects</h1>
+      <h1 id="projects" className="text-center text-6xl text-[#3794fc] pb-5 border-b-gray-300 border-solid border-b">Projects</h1>
 
     {/* sniffles project section */}
       <div className="md:flex md:flex-row-reverse border-b-gray-300 border-solid border-b">
@@ -42,29 +44,34 @@ function App() {
       <div className="md:flex md:flex-row-reverse border-b-gray-300 border-solid border-b">
         <VitalsImg />
         <ProjectSection liveBtnDest="https://jodyvanhoose.github.io/vitals/" srcBtnDest="https://github.com/jodyvanhoose/vitals" name="Vitals" description="Having a background in healthcare I wanted to contribute back to the healthcare/medical profession with this web app/product that takes in user data input  and displays if vital stats/data are in normal range. Development with HTML, CSS, Bootstrap, and JavaScript">
-
         </ProjectSection>
-
-      
       </div>
 
-      <h1 className="text-center text-6xl text-[#3794fc] my-5">Skills</h1>
-
+      {/* skills section */}
+      <h1 id="skills" className="text-center text-6xl text-[#3794fc] my-5">Skills</h1>
       <div className="border-gray-300 border-b">      
         <div className="md:max-w-4xl md:mx-auto">
           <Skills />
         </div>
       </div>
 
-      <h1 className="text-center text-6xl text-[#3794fc] mt-5 p-5">About</h1>
-
-      
-
-      <div id="about" className="flex flex-col lg:flex-row md:mx-20 p-5 justify-center items-center">
-        <AboutImg />
-        <About />
+      {/* about section */}
+      <h1 id="about" className="text-center text-6xl text-[#3794fc] mt-5 p-5">About</h1>
+      <div className="border-gray-300 border-b">
+        <div id="about" className="flex flex-col lg:flex-row md:mx-20 p-5 justify-center items-center">
+          <AboutImg />
+          <About />
+        </div>
       </div>
-
+      
+      {/* contact section */}
+      <h1 id="contact" className="text-center text-6xl text-[#3794fc] mt-5 p-5">Contact</h1>
+      <div className="md:flex border-b-gray-300 border-solid border-b mx-14">
+        <ContactSection />
+        <ContactImg />
+      </div>
+      <div className='h-20 bg-gray-900'>
+      </div>
       
     </div>
   );
