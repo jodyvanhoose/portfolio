@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
 
+import About from "./components/About";
+import AboutImg from "./components/AboutImg";
 import GreenImg from "./components/GreenImg";
 import HeroImg from "./components/HeroImg";
 import Nav from "./components/Nav";
@@ -14,18 +16,18 @@ import VitalsImg from "./components/VitalsImg";
 function App() {
   return (
     // navbar
-    <div className="scroll-smooth">
-      <Nav />
+    <div className="scroll-smooth text-gray-800">
+      <Nav></Nav>
       <div className="md:flex">
         <HeroImg />
         <Section />
       </div>
 
     {/* projects section */}
-      <h1 className="text-center text-6xl mb-5">Projects</h1>
+      <h1 className="text-center text-6xl text-[#3794fc] pb-5 border-b-gray-300 border-solid border-b">Projects</h1>
 
     {/* sniffles project section */}
-      <div className="md:flex md:flex-row-reverse border-b-gray-300 border-solid border-b border-t">
+      <div className="md:flex md:flex-row-reverse border-b-gray-300 border-solid border-b">
         <SniffleImg />
         <ProjectSection liveBtnDest="https://sniffles.netlify.app/" srcBtnDest="https://github.com/jodyvanhoose/sniffles" name="Sniffles" description="Sniffles is an allergy/pollen web app that takes in a users location and displays pollen data for that area. As I have allergies myself this was a project that was personal to me. I know the pains people with allergies face personally. Developed with HTML, CSS, SASS, JavaScript, and React.js framework."></ProjectSection>
       </div>
@@ -38,22 +40,31 @@ function App() {
 
       {/* vitals project sections */}
       <div className="md:flex md:flex-row-reverse border-b-gray-300 border-solid border-b">
-      <VitalsImg />
-      <ProjectSection liveBtnDest="https://jodyvanhoose.github.io/vitals/" srcBtnDest="https://github.com/jodyvanhoose/vitals" name="Vitals" description="Having a background in healthcare I wanted to contribute back to the healthcare/medical profession with this web app/product that takes in user data input  and displays if vital stats/data are in normal range. Development with HTML, CSS, Bootstrap, and JavaScript">
+        <VitalsImg />
+        <ProjectSection liveBtnDest="https://jodyvanhoose.github.io/vitals/" srcBtnDest="https://github.com/jodyvanhoose/vitals" name="Vitals" description="Having a background in healthcare I wanted to contribute back to the healthcare/medical profession with this web app/product that takes in user data input  and displays if vital stats/data are in normal range. Development with HTML, CSS, Bootstrap, and JavaScript">
 
-      </ProjectSection>
+        </ProjectSection>
 
       
       </div>
 
-      
-      <div className="md:max-w-4xl md:mx-auto ">
-      <Skills />
+      <h1 className="text-center text-6xl text-[#3794fc] my-5">Skills</h1>
+
+      <div className="border-gray-300 border-b">      
+        <div className="md:max-w-4xl md:mx-auto">
+          <Skills />
+        </div>
       </div>
-      <Section />
+
+      <h1 className="text-center text-6xl text-[#3794fc] mt-5 p-5">About</h1>
+
       
 
-    
+      <div id="about" className="flex flex-col lg:flex-row md:mx-20 p-5 justify-center items-center">
+        <AboutImg />
+        <About />
+      </div>
+
       
     </div>
   );
