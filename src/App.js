@@ -1,5 +1,6 @@
 
-
+import React from "react";
+import { useEffect } from "react";
 import About from "./components/About";
 import AboutImg from "./components/AboutImg";
 import ContactImg from "./components/ContactImg";
@@ -12,9 +13,15 @@ import Section from "./components/Section";
 import Skills from "./components/Skills";
 import SniffleImg from "./components/SniffleImg";
 import VitalsImg from "./components/VitalsImg";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 
 function App() {
+  useEffect(() => {
+    Aos.init({duration: 2000})
+  }, [])
+
   return (
     // navbar
     <div className="scroll-smooth text-gray-800">
@@ -28,19 +35,19 @@ function App() {
       <h1 id="projects" className="text-center text-6xl text-[#3794fc] pb-5 border-b-gray-300 border-solid border-b">Projects</h1>
 
     {/* sniffles project section */}
-      <div className="md:flex md:flex-row-reverse border-b-gray-300 border-solid border-b">
+      <div data-aos="fade-right" className="md:flex md:flex-row-reverse border-b-gray-300 border-solid border-b">
         <SniffleImg />
         <ProjectSection liveBtnDest="https://sniffles.netlify.app/" srcBtnDest="https://github.com/jodyvanhoose/sniffles" name="Sniffles" description="Sniffles is an allergy/pollen web app that takes in a users location and displays pollen data for that area. As I have allergies myself this was a project that was personal to me. I know the pains people with allergies face personally. Developed with HTML, CSS, SASS, JavaScript, and React.js framework."></ProjectSection>
       </div>
         
         {/* green smoothies project section  */}
-      <div className="md:flex border-b-gray-300 border-solid border-b">
+      <div data-aos="fade-left" className="md:flex border-b-gray-300 border-solid border-b">
         <GreenImg />
         <ProjectSection liveBtnDest="https://jodyvanhoose.github.io/GreenSmoothies/" srcBtnDest="https://github.com/jodyvanhoose/GreenSmoothies" name="Green Smoothies" description="A responsive mobile first website/product that displays smoothie/product data. Built with UI design for user experience in mind. Development with HTML, CSS, and JavaScript"></ProjectSection>
       </div>
 
       {/* vitals project sections */}
-      <div className="md:flex md:flex-row-reverse border-b-gray-300 border-solid border-b">
+      <div data-aos="fade-right" className="md:flex md:flex-row-reverse border-b-gray-300 border-solid border-b">
         <VitalsImg />
         <ProjectSection liveBtnDest="https://jodyvanhoose.github.io/vitals/" srcBtnDest="https://github.com/jodyvanhoose/vitals" name="Vitals" description="Having a background in healthcare I wanted to contribute back to the healthcare/medical profession with this web app/product that takes in user data input  and displays if vital stats/data are in normal range. Development with HTML, CSS, Bootstrap, and JavaScript">
         </ProjectSection>
@@ -48,7 +55,7 @@ function App() {
 
       {/* skills section */}
       <h1 id="skills" className="text-center text-6xl text-[#3794fc] my-5">Skills</h1>
-      <div className="border-gray-300 border-b">      
+      <div data-aos="fade-up" data-aos-duration="3000" className="border-gray-300 border-b">      
         <div className="md:max-w-4xl md:mx-auto">
           <Skills />
         </div>
@@ -62,6 +69,7 @@ function App() {
           <About />
         </div>
       </div>
+      
       
       {/* contact section */}
       <h1 id="contact" className="text-center text-6xl text-[#3794fc] mt-5 p-5">Contact</h1>

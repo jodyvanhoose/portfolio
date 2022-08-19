@@ -4,7 +4,7 @@ import {FiMail} from 'react-icons/fi'
 
 const ContactSection = () => {
   return (
-    <div className='text-center md:text-left pl-32 py-5 md:basis-2/3 flex flex-col justify-center'>
+    <div className='text-center md:text-left md:pl-32 py-5 md:basis-2/3 flex flex-col justify-center items'>
       <h1 className='lg:text-5xl md:text-4xl text-3xl pb-3'>Let's get in touch!</h1>
       <ul className=''>
         <li className='flex md:justify-start justify-center items-center py-4 xl:text-3xl text-xl'>
