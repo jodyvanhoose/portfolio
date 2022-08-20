@@ -21,7 +21,7 @@ const Nav = () => {
       <div className=' text-[#3794fc] md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
         
         {/* logo */}
-        <a href="home"><h1 className='z-10 cursor-pointer pt-2 md:pt-1 ml-3 md:text-2xl'><span className='md:text-4xl text-2xl'>J</span>ody <span className='md:text-4xl text-2xl'>V</span>an<span className='md:text-4xl text-2xl'>H</span>oose</h1></a>
+        <a href="#home"><h1 className='z-10 cursor-pointer pt-2 md:pt-1 ml-3 md:text-2xl'><span className='md:text-4xl text-2xl'>J</span>ody <span className='md:text-4xl text-2xl'>V</span>an<span className='md:text-4xl text-2xl'>H</span>oose</h1></a>
 
         {/* nav */}
         <div onClick={() =>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>

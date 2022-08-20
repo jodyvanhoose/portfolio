@@ -1,6 +1,7 @@
 
 import React from "react";
 import { useEffect } from "react";
+import "./App.css"
 import About from "./components/About";
 import AboutImg from "./components/AboutImg";
 import ContactImg from "./components/ContactImg";
@@ -55,7 +56,7 @@ function App() {
 
       {/* skills section */}
       <h1 id="skills" className="text-center text-6xl text-[#3794fc] my-5">Skills</h1>
-      <div data-aos="fade-up" data-aos-duration="3000" className="border-gray-300 border-b">      
+      <div data-aos="zoom-in" data-aos-duration="3000" className="border-gray-300 border-b">      
         <div className="md:max-w-4xl md:mx-auto">
           <Skills />
         </div>
