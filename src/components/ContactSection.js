@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaGithub, FaLinkedin, FaPhone} from 'react-icons/fa'
 import {FiMail} from 'react-icons/fi'
+import Resume from '../assets/Resume.pdf'
 
 const ContactSection = () => {
   return (
@@ -24,6 +25,7 @@ const ContactSection = () => {
           <FaLinkedin className='text-4xl text-[#3794fc]'></FaLinkedin>
           </a></li>
       </ul>
+      <a href={Resume} download='Resume'><button className='border text-gray-900 border-gray-500 px-5 py-1 hover:text-gray-500 hover:shadow-lg transition-all duration-500'>Download Resume</button></a>
       
     </div>
   )
