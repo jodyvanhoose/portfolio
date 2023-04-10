@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "O7rlWNhDgOJir0+xL+nsxvDeKkoGKUmWrCRTBrDU6OORfhqIUTf2w2dEaqvr3PUbVCqcg75iVsB9OO/67OHAqQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jody_\\source\\repos\\HomeBrewApp\\HomeBrew\\HomeBrew.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jody_\\.nuget\\packages\\spectre.console\\0.46.0\\spectre.console.0.46.0.nupkg.sha512",
+    "C:\\Users\\jody_\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}

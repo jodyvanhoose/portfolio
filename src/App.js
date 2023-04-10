@@ -16,6 +16,8 @@ import SniffleImg from "./components/SniffleImg";
 import VitalsImg from "./components/VitalsImg";
 import Aos from "aos";
 import "aos/dist/aos.css"
+import HomebrewImg from "./components/HomebrewImg";
+import HomebrewSection from "./components/HomebrewSection";
 
 
 function App() {
@@ -32,10 +34,10 @@ function App() {
         <Section />
       </div>
 
-    {/* projects section */}
+      {/* projects section */}
       <h1 id="projects" className="text-center text-6xl text-[#3794fc] pb-5 border-b-gray-300 border-solid border-b">Projects</h1>
 
-    {/* sniffles project section */}
+      {/* sniffles project section */}
       <div data-aos="fade-right" className="md:flex md:flex-row-reverse border-b-gray-300 border-solid border-b">
         <SniffleImg />
         <ProjectSection liveBtnDest="https://sniffles.netlify.app/" srcBtnDest="https://github.com/jodyvanhoose/sniffles" name="Sniffles" description="Sniffles is an allergy/pollen web app that takes in a users location and displays pollen data for that area. As I have allergies myself this was a project that was personal to me. I know the pains people with allergies face personally. Developed with HTML, CSS, SASS, JavaScript, and React.js framework."></ProjectSection>
@@ -48,10 +50,17 @@ function App() {
       </div>
 
       {/* vitals project sections */}
-      <div data-aos="fade-right" className="md:flex md:flex-row-reverse border-b-gray-300 border-solid border-b">
+      {/* <div data-aos="fade-right" className="md:flex md:flex-row-reverse border-b-gray-300 border-solid border-b">
         <VitalsImg />
         <ProjectSection liveBtnDest="https://jodyvanhoose.github.io/vitals/" srcBtnDest="https://github.com/jodyvanhoose/vitals" name="Vitals" description="Having a background in healthcare I wanted to contribute back to the healthcare/medical profession with this web app/product that takes in user data input  and displays if vital stats/data are in normal range. Development with HTML, CSS, Bootstrap, and JavaScript">
         </ProjectSection>
+      </div> */}
+
+      {/* homebrew tools project sections */}
+      <div data-aos="fade-right" className="md:flex md:flex-row-reverse border-b-gray-300 border-solid border-b">
+        <HomebrewImg />
+        <HomebrewSection srcBtnDest="https://github.com/jodyvanhoose/HomeBrewTool" name="HomeBrew Tools" description="HomeBrew Tools is a C# console application that allows the user to build, print to screen, and save hombrew beer and mead recipes to file. It also can calculate ABV(alcohol by volume), convert Brix to Specfic Gravity, and determine Specfic Gravity from amount and type of malt extract. Development with C#, .NET, Spectre.Console Library">
+        </HomebrewSection>
       </div>
 
       {/* skills section */}

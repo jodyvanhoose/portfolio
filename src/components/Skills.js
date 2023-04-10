@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaHtml5,FaCss3Alt,FaSass,FaGitAlt, FaGithub,FaNpm,FaBootstrap,FaReact,FaFigma} from 'react-icons/fa'
-import {SiJavascript} from 'react-icons/si'
+import {SiCsharp, SiJavascript, SiDotnet} from 'react-icons/si'
 
 const Skills = () => {
   return (
@@ -34,6 +34,16 @@ const Skills = () => {
           <div className='text-6xl text-[#3794fc] flex flex-col p-10 place-items-center'>
             <FaSass />
             <h2 className='text-2xl'>SASS</h2>
+          </div>
+
+          <div className='text-6xl text-[#3794fc] flex flex-col p-10 place-items-center'>
+            <SiCsharp />
+            <h2 className='text-2xl'>C Sharp</h2>
+          </div>
+
+          <div className='text-6xl text-[#3794fc] flex flex-col p-10 place-items-center'>
+            <SiDotnet />
+            <h2 className='text-2xl'>.NET</h2>
           </div>
 
           <div className='text-6xl text-[#3794fc] flex flex-col p-10 place-items-center'>
