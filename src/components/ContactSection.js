@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaGithub, FaLinkedin, FaPhone} from 'react-icons/fa'
 import {FiMail} from 'react-icons/fi'
-import Resume from '../assets/Resume.pdf'
+import Resume from '../assets/Resume2.pdf'
 
 const ContactSection = () => {
   return (

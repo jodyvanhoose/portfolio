@@ -27,7 +27,7 @@ function App() {
 
   return (
     // navbar
-    <div className="scroll-smooth text-gray-800">
+    <div className="scroll-smooth text-gray-800 container mx-auto">
       <Nav></Nav>
       <div id="home" className="md:flex">
         <HeroImg />
@@ -87,8 +87,7 @@ function App() {
         <ContactSection />
         <ContactImg />
       </div>
-      <div className='h-20 bg-gray-900'>
-      </div>
+      
       
     </div>
   );
